@@ -16,6 +16,17 @@ namespace Methods
         static void Main(string[] args)
         {
             Greet();
+            int[] a = new int[5];
+            int i;
+            for(i=0;i<5;i++)
+            {
+                Console.Write($"Enter {i}th Elemnt = ");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for(i=0;i<5;i++)
+            {
+                Console.Write($"{i}th element : " + a[i]+"\n");
+            }
         }
     }
 }
